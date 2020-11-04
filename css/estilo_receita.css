@@ -1,37 +1,48 @@
-@font-face {
+/*@font-face {
 	font-family: "RegencyScriptFLF Regular";
 	src: url("http://site/fontes/RegencyScriptFLF-Regular.eot"); /* para IE */
-	src: local("RegencyScriptFLF-Regular"), url("http://site/fontes/RegencyScriptFLF-Regular.ttf") format("opentype");
-}
+	/*src: local("RegencyScriptFLF-Regular"), url("http://site/fontes/RegencyScriptFLF-Regular.ttf") format("opentype");
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body {
     width: 100%;
-    font-family: "RegencyScriptFLF Regular", Cursive;
-    font: 15px;
-    font-size: 15px;
-    background-color: azure;
+    font-family: 'Itim', cursive;
+    font: 16px;
+    font-size: 16px;
 }
 
 hr {
     clear: both;
-    border-color: aquamarine;
-    line-height:2px;
+    border: 2px solid #E5989B;
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
 thead {
-    background-color: deepskyblue;
+    background-color: #B5838D;
 }
 
 tbody tr:nth-child(even){
-   background-color: #E9E9E9;
+   background-color: #FFB4A2;
 }
+
+th, td {
+    border: solid #FFCDB2;
+    padding: 2px;
+}
+/*
+p:nth-child(even){
+    font-style: oblique;
+    color: springgreen;
+}*/
 
 ul, ol {
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 
 #container {
@@ -94,6 +105,16 @@ ul, ol {
 .topo_receitas img { 
     width: 200px;
     border-radius: 20%;
+}
+.topo_receitas p {
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: large;
+}
+
+.topo_receitas p img {
+    width: 50px;
+    vertical-align: middle;
 }
 
 .topo_receitas_posicao_icone {
